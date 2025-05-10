@@ -1,0 +1,30 @@
+# === Python Bytecode ===
+__pycache__/
+*.py[cod]
+*.so
+
+# === Virtuelle Umgebung ===
+venv/
+env/
+
+# === VSCode Projektdateien (optional) ===
+.vscode/
+
+# === Modellgewichte ===
+*.pt
+weights/
+
+# === Bildergebnisse vom Backend ===
+images/
+
+# === Temporäre Dateien / Logs ===
+*.log
+*.tmp
+*.bak
+
+# === Mac / Windows Metadaten ===
+.DS_Store
+Thumbs.db
+
+# === Jupyter Notebooks Checkpoints ===
+.ipynb_checkpoints/
