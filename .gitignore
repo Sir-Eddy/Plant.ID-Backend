@@ -10,10 +10,6 @@ env/
 # === VSCode Projektdateien (optional) ===
 .vscode/
 
-# === Modellgewichte ===
-*.pt
-weights/
-
 # === Bildergebnisse vom Backend ===
 images/
 
