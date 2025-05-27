@@ -1,0 +1,27 @@
+services:
+  plantid:
+    image: plantid_backend:local
+    build:
+      context: .
+    container_name: plantid
+    restart: always
+    labels:
+      - traefik.enable=true
+      - traefik.http.routers.plantid.rule=Host(`plantid.${DOMAIN}`)
+      - traefik.http.routers.plantid.entrypoints=websecure
+      - traefik.http.routers.plantid.tls=true
+      - traefik.http.routers.plantid.service=plantid
+      - traefik.http.services.plantid.loadbalancer.server.port=8000
+    logging:
+      driver: "json-file"
+      options:
+        max-size: "10m"
+        max-file: "5"
+    volumes:
+      - ./images/:/app/images
+    networks:
+      - cloudflaretunnel
+
+networks:
+  cloudflaretunnel:
+    external: true
