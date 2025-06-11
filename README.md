@@ -1,6 +1,6 @@
 # 🌿 Plant Identifier – Backend
 
-Ein einfaches Backend zur automatischen Erkennung von Pflanzen (insbesondere Unkraut) auf Bildern mithilfe eines YOLOv5-Modells.  
+Ein einfaches Backend zur automatischen Erkennung von Pflanzen (insbesondere Unkraut) auf Bildern mithilfe eines YOLOv11-Modells.  
 Das System nimmt ein Bild vom Frontend entgegen, erkennt darauf Pflanzen, markiert sie farblich und gibt das Ergebnisbild sowie die Koordinaten der erkannten Objekte zurück.
 
 ---
@@ -8,7 +8,7 @@ Das System nimmt ein Bild vom Frontend entgegen, erkennt darauf Pflanzen, markie
 ## 🚀 Features
 
 - REST-API zur Analyse von Bildern
-- Objekterkennung mit einem PyTorch-Modell (YOLOv5)
+- Objekterkennung mit einem PyTorch-Modell (YOLOv11)
 - Farbliche Markierung der erkannten Objekte mittels OpenCV
 - Rückgabe des Ergebnisbildes als URL
 - Übergabe der erkannten Objektkoordinaten im JSON-Format
@@ -62,7 +62,6 @@ Hier kann ein Bild hochgeladen und die Erkennung getestet werden.
 
 * Python 3.10 oder neuer
 * Installierte Abhängigkeiten (siehe `requirements.txt`)
-* Ein trainiertes YOLOv5-Modell (`best.pt` im Ordner `weights/`)
 
 ---
 
