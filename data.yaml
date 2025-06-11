@@ -1,6 +1,0 @@
-path: C:/Users/elias/Documents/GitHub/PlantIdentifier/dataset
-train: images/train
-val: images/val
-
-nc: 1
-names: ["unkraut"]
