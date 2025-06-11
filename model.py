@@ -2,8 +2,8 @@ from ultralytics import YOLO
 import numpy as np
 import cv2
 
-# Vortrainiertes YOLOv5-Modell laden (einmalig beim Start)
-model = YOLO("yolov5s.pt")  # Du kannst auch yolov8n.pt verwenden
+
+model = YOLO("weights/best.pt")
 
 def run_inference(image: np.ndarray):
     # OpenCV (BGR) → RGB
