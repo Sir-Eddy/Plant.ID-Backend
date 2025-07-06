@@ -70,7 +70,7 @@ Hier kann ein Bild hochgeladen und die Erkennung getestet werden.
 ```
 .
 ├── main.py           # API-Endpunkt
-├── model.py          # Inferenzlogik mit YOLOv5
+├── model.py          # Inferenzlogik mit YOLOv11
 ├── images/           # Ergebnisbilder mit Markierungen
 ├── weights/          # YOLO-Modell (.pt)
 ├── requirements.txt
